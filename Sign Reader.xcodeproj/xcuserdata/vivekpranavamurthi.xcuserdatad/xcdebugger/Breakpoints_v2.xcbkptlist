@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "ED1DF0F7-50A8-4434-A099-7EAB0C4F0442"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "64C39741-F974-46C7-8580-D5CF058F00E4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sign Reader/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "64C39741-F974-46C7-8580-D5CF058F00E4 - 395b0b8fee944270"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sign_Reader.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Sign_Reader.ViewController"
+                  moduleName = "Sign Reader"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vivekpranavamurthi/Desktop/Swift%20Projects/Sign%20Reader/Sign%20Reader/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "1800">
+               </Location>
+               <Location
+                  uuid = "64C39741-F974-46C7-8580-D5CF058F00E4 - 8d473ccabb2c52d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sign_Reader.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Sign_Reader.ViewController&gt;"
+                  moduleName = "Sign Reader"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vivekpranavamurthi/Desktop/Swift%20Projects/Sign%20Reader/Sign%20Reader/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "1768">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

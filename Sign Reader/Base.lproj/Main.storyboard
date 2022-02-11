@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="main" id="BYZ-38-t0r" customClass="ViewController" customModule="Sign_Reader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FHL-f2-OYX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOADING..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2PG-nn-8aj">
+                                <rect key="frame" x="104" y="229" width="206" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <color key="textColor" red="0.96668309100000005" green="1" blue="0.95433164459999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CPj-MN-USf">
+                                <rect key="frame" x="294" y="660" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Rz8-fm-8lI"/>
+                                    <constraint firstAttribute="width" constant="100" id="pi6-nD-3os"/>
+                                </constraints>
+                                <state key="normal" title="flipCamera" image="purpButton.png"/>
+                                <connections>
+                                    <action selector="flipCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8YG-qM-yyb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HJu-FX-l3S"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2PG-nn-8aj" firstAttribute="leading" secondItem="HJu-FX-l3S" secondAttribute="leading" constant="104" id="4h6-GV-aAs"/>
+                            <constraint firstItem="HJu-FX-l3S" firstAttribute="trailing" secondItem="2PG-nn-8aj" secondAttribute="trailing" constant="104" id="KPT-Sr-ZG4"/>
+                            <constraint firstItem="CPj-MN-USf" firstAttribute="leading" secondItem="HJu-FX-l3S" secondAttribute="leading" constant="294" id="OTV-OZ-Fdu"/>
+                            <constraint firstItem="2PG-nn-8aj" firstAttribute="top" secondItem="HJu-FX-l3S" secondAttribute="top" constant="185" id="vOi-5a-6Ue"/>
+                            <constraint firstItem="HJu-FX-l3S" firstAttribute="bottom" secondItem="CPj-MN-USf" secondAttribute="bottom" constant="102" id="y6T-vr-ALW"/>
+                            <constraint firstItem="HJu-FX-l3S" firstAttribute="trailing" secondItem="CPj-MN-USf" secondAttribute="trailing" constant="20" id="yst-ka-QfJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="flipCamButton" destination="CPj-MN-USf" id="sSi-rZ-bno"/>
+                        <outlet property="loadingLabel" destination="2PG-nn-8aj" id="O4w-pS-dbi"/>
+                        <outlet property="videoOutput" destination="FHL-f2-OYX" id="Sz5-wy-06v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33.333333333333336" y="137.27678571428569"/>
+        </scene>
+        <!--View Controller pop Up-->
+        <scene sceneID="iiZ-YS-ZTT">
+            <objects>
+                <viewController storyboardIdentifier="sbPopUpID" id="z0C-re-yLM" customClass="ViewController_popUp" customModule="Sign_Reader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qdu-Vj-Ewp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7PC-68-GD4">
+                                <rect key="frame" x="87" y="184" width="241" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ePY-Ra-mhf">
+                                        <rect key="frame" x="1" y="0.0" width="240" height="320"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Note: This is a demo version. Some signs may register incorrectly due to lighting angling and other limitations. Sign Reader makes use of the camera to detect hand positioning. No data is sent back to the creator of this application.</string>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVV-zh-B6l">
+                                        <rect key="frame" x="74" y="244" width="92" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.96668309100000005" green="1" blue="0.95433164459999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Acknowledge">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closePanel:" destination="z0C-re-yLM" eventType="touchUpInside" id="Kzv-bb-Gmd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rZk-Fx-dKt"/>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="MVV-zh-B6l" id="1XR-8j-8yf"/>
+                        <outlet property="textPanel" destination="ePY-Ra-mhf" id="w1y-Uu-cQl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rzd-4w-8OA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="967" y="137"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="purpButton.png" width="800" height="800"/>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
